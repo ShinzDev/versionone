@@ -22,11 +22,11 @@ import { Button } from "@/components/ui/button"
 import { DropdownMenuTrigger, DropdownMenuItem, DropdownMenuContent, DropdownMenu } from "@/components/ui/dropdown-menu"
 import { Input } from "@/components/ui/input"
 
-export function navbar() {
+export function Navbar() {
   return (
     (<div className="flex flex-col min-h-[100dvh]">
       <header
-        className="px-4 lg:px-6 h-14 flex items-center justify-between bg-white dark:bg-gray-950 shadow">
+        className="px-4 lg:px-6 h-14 flex items-center justify-between bg-white  shadow">
         <Link className="flex items-center justify-center" href="#">
           <CodeIcon className="h-6 w-6" />
           <span className="sr-only">John Doe</span>

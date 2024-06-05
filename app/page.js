@@ -1,4 +1,4 @@
-import { Landingpage } from "@/components/component/landingpage";
+// import { Landingpage } from "@/components/component/landingpage";
 import { Navbar } from "@/components/component/navbar";
 import Image from "next/image";
 

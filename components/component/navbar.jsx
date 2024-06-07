@@ -21,7 +21,9 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { DropdownMenuTrigger, DropdownMenuItem, DropdownMenuContent, DropdownMenu } from "@/components/ui/dropdown-menu"
 import { Input } from "@/components/ui/input"
-
+import Image from 'next/image'
+import show from './showcase.png'
+import './light.css'
 export function Navbar() {
   return (
     (<div className="flex flex-col min-h-[100dvh]">
@@ -90,6 +92,18 @@ export function Navbar() {
                 </h1>
                 <p
                   className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">Frontend Developer</p>
+
+                 <div className=" w-14 border       rounded-full overflow-hidden   bg-gray-900  ">
+
+                  <marquee  scrollamount="3"  className="text-center   z-50  h-3" behavior="" direction="up">
+                  <p>🎮</p>
+                  <p>👩‍💻</p>
+                  <p>📷</p>
+                  
+                  </marquee>
+                 
+                    <hr />
+                 </div>
                 <p
                   className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
                   I create beautiful and functional web applications using the latest technologies.
@@ -113,11 +127,11 @@ export function Navbar() {
             <div
               className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
               <div className="grid gap-4">
-                <img
+                <Image
                   alt="Project 1"
                   className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
                   height="310"
-                  src="/placeholder.svg"
+                  src={show}
                   width="550" />
                 <div className="grid gap-1">
                   <h3 className="text-lg font-bold">Project 1</h3>

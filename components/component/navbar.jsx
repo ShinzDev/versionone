@@ -122,7 +122,9 @@ export function Navbar() {
                 <div className="grid gap-1">
                   <h3 className="text-lg font-bold">Project 1</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
-                    A web application that helps users manage their tasks.
+               
+                    <a href="https://shin-xdecour.vercel.app/" target="blank">  A web application that helps users manage their tasks.</a>
+                  
                   </p>
                 </div>
               </div>

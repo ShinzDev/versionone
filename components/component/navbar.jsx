@@ -28,7 +28,7 @@ export function Navbar() {
   return (
     (<div className="flex flex-col min-h-[100dvh]">
       <header
-        className="px-4 lg:px-6 h-14 flex items-center justify-between sticky top-0 bg-black  text-white shadow">
+        className="px-4 lg:px-6 h-14 flex items-center justify-between sticky top-0 bg-black    text-white shadow">
         <Link className="flex items-center justify-center" href="#">
           <CodeIcon className="h-6 w-6    text-white" />
           <span className="sr-only"></span>
@@ -112,6 +112,7 @@ export function Navbar() {
             </div>
           </div>
         </section>
+
         <section className="w-full py-12 md:py-24 lg:py-32" id="projects">
           <div className="container space-y-12 px-4 md:px-6">
             <div
@@ -129,10 +130,11 @@ export function Navbar() {
               <div className="grid gap-4">
                 <Image
                   alt="Project 1"
-                  className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
+                  className="mx-auto aspect-video  overflow-hidden rounded-xl object-cover object-center"
                   height="310"
                   src={show}
-                  width="550" />
+                  width="550" 
+                  />
                 <div className="grid gap-1">
                   <h3 className="text-lg font-bold">Project 1</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -169,9 +171,15 @@ export function Navbar() {
                     A web application that helps users plan their travel.
                   </p>
                 </div>
-              </div>
+           
             </div>
+            </div>
+              <button className=" grid gap-4">
+            view more
+          </button> 
           </div>
+
+          
         </section>
         <section
           className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 "

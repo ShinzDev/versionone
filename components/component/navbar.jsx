@@ -3,7 +3,6 @@
 * @see https://v0.dev/t/c48aHx0iuVF
 * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
 */
-
 /** Add fonts into your Next.js project:
 
 import { Comfortaa } from 'next/font/google'
@@ -17,6 +16,7 @@ To read more about using these font, please visit the Next.js documentation:
 - App Directory: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
+import { MdOutlineArrowRightAlt } from "react-icons/md";
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { DropdownMenuTrigger, DropdownMenuItem, DropdownMenuContent, DropdownMenu } from "@/components/ui/dropdown-menu"
@@ -175,7 +175,7 @@ export function Navbar() {
             </div>
             </div>
               <button className="  grid gap-3  rounded  p-2 bg-gray-800">
-            view more
+            view more 
           </button> 
           </div>
 

@@ -221,7 +221,7 @@ export function Navbar() {
         <p className="text-xs text-gray-500 dark:text-gray-400">© 2024 shinXdev. All rights reserved.</p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
          
-          <Link className="text-xs hover:underline underline-offset-4" href="https://github.com/ShinzDev">
+          <Link className="text-xs hover:underline underline-offset-4" target="blank" href="https://github.com/ShinzDev">
             GitHub
           </Link>
           <Link className="text-xs hover:underline underline-offset-4" href="">

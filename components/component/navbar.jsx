@@ -16,7 +16,6 @@ To read more about using these font, please visit the Next.js documentation:
 - App Directory: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
-import { MdOutlineArrowRightAlt } from "react-icons/md";
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { DropdownMenuTrigger, DropdownMenuItem, DropdownMenuContent, DropdownMenu } from "@/components/ui/dropdown-menu"
@@ -24,6 +23,7 @@ import { Input } from "@/components/ui/input"
 import Image from 'next/image'
 import show from './showcase.png'
 import './light.css'
+// import { Modal } from "./modal";
 export function Navbar() {
   return (
     (<div className="flex flex-col min-h-[100dvh]">
@@ -221,12 +221,14 @@ export function Navbar() {
         <p className="text-xs text-gray-500 dark:text-gray-400">© 2024 shinXdev. All rights reserved.</p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
          
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
+          <Link className="text-xs hover:underline underline-offset-4" href="https://github.com/ShinzDev">
             GitHub
           </Link>
-          <Link className="text-xs hover:underline underline-offset-4" href="shinaayomibamgboye@gmail.com">
+          <Link className="text-xs hover:underline underline-offset-4" href="">
             Email
           </Link>
+          {/* <Modal/> */}
+        
         </nav>
       </footer>
     </div>)

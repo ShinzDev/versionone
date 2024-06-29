@@ -22,6 +22,7 @@ import { DropdownMenuTrigger, DropdownMenuItem, DropdownMenuContent, DropdownMen
 import { Input } from "@/components/ui/input"
 import Image from 'next/image'
 import show from './showcase.png'
+import app from './appland.png'
 import './light.css'
 // import { Modal } from "./modal";
 export function Navbar() {
@@ -149,12 +150,12 @@ export function Navbar() {
                   alt="Project 2"
                   className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"
                   height="310"
-                  src="/placeholder.svg"
+                  src={app}
                   width="550" />
                 <div className="grid gap-1">
                   <h3 className="text-lg font-bold">Project 2</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
-                   <a href="https://tutorialforeact.vercel.app"></a> A web application that helps users track their expenses.
+                   <a href="https://tutorialforeact.vercel.app"></a> Lanuch Your App with Confidence and Creativity
                   </p>
                 </div>
               </div>

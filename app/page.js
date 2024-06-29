@@ -1,13 +1,15 @@
 // import { Landingpage } from "@/components/component/landingpage";
-import { Navbar } from "@/components/component/navbar";
+
 import Image from "next/image";
+import { Mainhome } from "./page/Home";
 
 export default function Home() {
   return (
     <main>
       {/* <h1>hello world</h1> */}
       {/* <Landingpage/> */}
-      <Navbar/>
+
+      <Mainhome/>
     </main>
   );
 }

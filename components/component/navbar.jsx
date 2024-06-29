@@ -106,7 +106,7 @@ export function Navbar() {
                  </div>
                 <p
                   className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  I create beautiful and functional web applications using the latest technologies.
+                  I create beautiful web applications using the latest technologies.
                 </p>
               </div>
             </div>
@@ -154,7 +154,7 @@ export function Navbar() {
                 <div className="grid gap-1">
                   <h3 className="text-lg font-bold">Project 2</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
-                    A web application that helps users track their expenses.
+                   <a href="https://tutorialforeact.vercel.app"></a> A web application that helps users track their expenses.
                   </p>
                 </div>
               </div>

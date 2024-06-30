@@ -175,9 +175,7 @@ export function Navbar() {
            
             </div>
             </div>
-              <button className="  grid gap-3  rounded  p-2 bg-gray-800">
-            view more 
-          </button> 
+              
           </div>
 
           

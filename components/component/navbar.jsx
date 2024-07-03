@@ -140,7 +140,7 @@ export function Navbar() {
                   <h3 className="text-lg font-bold">Project 1</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
                
-                    <a href="https://shin-xdecour.vercel.app/" target="blank">  A web application that helps users manage their tasks.</a>
+                    <a href="https://shin-xdecour.vercel.app/" target="blank">  a web app for decorations </a>
                   
                   </p>
                 </div>

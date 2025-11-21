@@ -1,65 +1,68 @@
-// import Link from "next/link"
-'use client'
-import { useState } from "react";
-import { FiMenu, FiX } from "react-icons/fi";
+"use client"
+
+import { motion } from "framer-motion";
+
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
-  
-
-  const links = [
-    { name: "about me", path: "#about" },   
-    { name: "Skills", path: "#skills" },   
-    { name: "Project", path: "#project" },   
-  ]
-  return(
-    <nav className="w-full flex justify-center mb-20 mt-2 ">
-      <div className="backdrop-blur-md bg-blue-400 fixed    border border-white/20 shadow-lg 
-        rounded-lg px-8 py-3 flex items-center justify-between gap-10 
-        max-w-200 w-full">
-
+  return (
+    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/10 border-b border-white/5">
+      <nav className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
-        <div className="text-xl font-semibold text-white">LOGO</div>
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-white text-lg font-semibold tracking-wide"
+        >
+          Bluey.
+        </motion.div>
 
-        {/* Desktop Links */}
-        <div className="hidden md:flex items-center gap-8">
-          {links.map((link, index) => (
-            <a
-              key={index}
-              href={link.path}
-              className="text-gray-200 hover:text-blue-400 transition font-medium"
-            >
-              {link.name}
-            </a>
+        {/* Nav Links */}
+        <motion.ul
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.6 }}
+          className="hidden md:flex items-center space-x-10"
+        >
+          {[
+            { name: "Home", href: "#home" },
+            { name: "Projects", href: "#projects" },
+            { name: "About", href: "#about" },
+            { name: "Contact", href: "#contact" },
+          ].map((item) => (
+            <li key={item.name}>
+              <a
+                href={item.href}
+                className="text-gray-300 hover:text-white transition-colors duration-300 text-sm tracking-wide"
+              >
+                {item.name}
+              </a>
+            </li>
           ))}
-        </div>
+        </motion.ul>
 
         {/* Mobile Menu Icon */}
-        <button
-          className="md:hidden text-white text-2xl"
-          onClick={() => setOpen(!open)}
+        <motion.button
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          className="md:hidden text-gray-300 hover:text-white transition-colors"
         >
-          {open ? <FiX /> : <FiMenu />}
-        </button>
-      </div>
-
-      {/* Mobile Dropdown */}
-      {open && (
-        <div className="md:hidden absolute top-24 w-[85%] mx-auto bg-white/10 
-          backdrop-blur-md border border-white/20 shadow-lg rounded-xl p-5 flex flex-col gap-4 text-center">
-
-          {links.map((link, index) => (
-            <a
-              key={index}
-              href={link.path}
-              className="text-gray-200 hover:text-blue-400 transition font-medium text-lg"
-              onClick={() => setOpen(false)}
-            >
-              {link.name}
-            </a>
-          ))}
-        </div>
-      )}
-    </nav>
-    
-  )
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-7 h-7"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </motion.button>
+      </nav>
+    </header>
+  );
 }

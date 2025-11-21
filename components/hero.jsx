@@ -27,6 +27,7 @@ export default function Hero() {
                       src={item.Img}  
                       height={400}
                       width={400}
+                      alt="tyyt"
                     />
                     </div>
                     <div className="text-2xl        "><p>{item.name}</p></div>

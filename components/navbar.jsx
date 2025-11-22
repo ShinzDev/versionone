@@ -16,7 +16,6 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-10 text-white text-sm">
             <a href="#projects" className="hover:opacity-60 transition">Projects</a>
-            <a href="#reel" className="hover:opacity-60 transition">Reel</a>
             <a href="#about" className="hover:opacity-60 transition">About</a>
             <a href="#contact" className="hover:opacity-60 transition">Contact</a>
           </div>

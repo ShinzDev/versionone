@@ -18,13 +18,7 @@ export default function FeaturedProjects() {
       
       desc: "React + Next.js app that scrapes creators' links for promo codes.",
     },
-    {
-      title: "Cinematic QR Code System",
-      img: "https://via.placeholder.com/1200x700",
-      link : 'https://shin-xdecour.vercel.app/',
       
-      desc: "A smooth, modern attendance system with QR scans and PDF outputs.",
-    },
   ];
 
   return (

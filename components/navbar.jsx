@@ -11,7 +11,7 @@ export default function Navbar() {
       <nav className="w-full fixed top-0 left-0 z-50 bg-black/60 backdrop-blur-xl border-b border-white/10">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           {/* Logo */}
-          <h1 className="text-xl font-semibold tracking-wide text-white">Bluey.</h1>
+          <h1 className="text-xl font-semibold tracking-wide text-white">Shina.</h1>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-10 text-white text-sm">

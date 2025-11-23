@@ -14,7 +14,7 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="w-full h-80 md:h-full bg-[url(/showcase.png)] bg-cover bg-center rounded-2xl shadow-2xl"
+          className="w-full h-80 md:h-full bg-[url(/shina2.png)] bg-cover bg-center rounded-2xl shadow-2xl"
         ></motion.div>
 
         {/* Text */}

@@ -1,58 +1,119 @@
 'use client'
-
+import { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
+
+// import { motion } from "framer-motion";
 
 export default function Hero() {
+  
+  
+  const profile = [
+    {
+      img : '/shina3.png',
+      profession : 'Software Developer',
+     
+    }
+  ]
+  
+
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  
+  
+  const handleChange = (e) => {
+  setForm({ ...form, [e.target.name]: e.target.value });
+  };
+  
   return (
     <section
       id="home"
-      className="min-h-screen w-full bg-black text-white flex items-center justify-center px-6"
-    >
-      {/* Container */}
-      <div className="max-w-5xl mx-auto text-center select-none">
-        {/* Cinematic Fade-In Text */}
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="text-5xl md:text-7xl font-semibold tracking-tight leading-tight"
-        >
-          Crafting <span className="text-gray-400">digital stories</span><br />
-          through code & visuals.
-        </motion.h1>
+      className="min-h-screen w-full bg-black text-white grid grid-cols-2 items-center  justify-center px-10">
+        {
+          profile.map((p, index) => {
+            return (
+              <div key={index}>
+                <Image
+                  src={p.img}
+                  width={400}
+                  height={400}
+                  className="rounded-md border-t-gray-50"
 
-        {/* Subtext */}
-        <motion.p
+                  alt="shina" />
+                <h1>I am Shina</h1>
+                <h1>{p.profession}</h1>
+                <div><p>I’m a front-end developer and visual creative who blends technology with cinematic storytelling. I design interfaces that feel intentional, minimal, and emotionally expressive — the kind that draw you in like a well-shot scene. </p> </div>
+              </div>
+            );
+          })
+        }
+        
+        <div>
+          <section id="contact" className="w-full py-32 bg-black text-white">
+          <div className="max-w-xl mx-auto ">
+          <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 1 }}
-          className="mt-6 text-gray-300 text-lg md:text-xl max-w-2xl mx-auto"
-        >
-          Cinematic minimalism — designed and built with intention.
-        </motion.p>
-
-        {/* CTA Buttons */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.9, duration: 1 }}
-          className="mt-10 flex items-center justify-center space-x-6"
-        >
-          <a
-            href="#projects"
-            className="px-6 py-3 border border-white/20 rounded-xl hover:bg-white hover:text-black transition duration-300 text-sm tracking-wide"
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-10 shadow-2xl"
           >
-            View Projects
-          </a>
-
-          <a
-            href="#contact"
-            className="px-6 py-3 bg-white text-black rounded-xl hover:bg-gray-200 transition duration-300 text-sm tracking-wide"
+     
+          
+          
+          {/* Full Name + Email */}
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
+          <div>
+          <label className="text-sm text-white/70">Full Name</label>
+          <input
+          type="text"
+          name="name"
+          placeholder="Enter your full name"
+          value={form.name}
+          onChange={handleChange}
+          className="w-full mt-2 px-4 py-3 rounded-xl bg-white/10 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-white/30 transition"
+          />
+          </div>
+          
+          
+          <div>
+          <label className="text-sm text-white/70">Email</label>
+          <input
+          type="email"
+          name="email"
+          placeholder="example@email.com"
+          value={form.email}
+          onChange={handleChange}
+          className="w-full mt-2 px-4 py-3 rounded-xl bg-white/10 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-white/30 transition"
+          />
+          </div>
+          </div>
+          
+          
+          {/* Message */}
+          <div className="mb-8">
+          <label className="text-sm text-white/70">Brief Overview</label>
+          <textarea
+          name="message"
+          rows="5"
+          placeholder="Tell us about your project..."
+          value={form.message}
+          onChange={handleChange}
+          className="w-full mt-2 px-4 py-3 rounded-xl bg-white/10 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-white/30 transition"
+          />
+          </div>
+          
+          
+          {/* Submit Button */}
+          <button
+          onClick={() => window.open(`https://wa.me/2348085123238?text=Name:%20${form.name}%0AEmail:%20${form.email}%0AMessage:%20${form.message}`)}
+          className="w-full py-4 rounded-xl bg-white text-black font-medium text-lg hover:opacity-90 transition shadow-lg"
           >
-            Contact Me
-          </a>
-        </motion.div>
-      </div>
+          Send
+          </button>
+          </motion.div>
+          </div>
+          </section>
+        </div>
+  
     </section>
   );
 }

@@ -34,12 +34,10 @@ export default function Hero() {
             />
             <h1 className="text-2xl">  Hi, I'm Shina</h1>
             <h1 className="text-5xl">{p.profession}</h1>
-            <div className="bg-white text-black font-bold rounded-md p-2 hover:bg-black hover:text-white transition">
+            <div className="bg-black text-white font-bold rounded-md p-2 hover:bg-white hover:text-black transition">
               <p>
                 I’m a front-end developer and visual creative who blends
-                technology with cinematic storytelling. I design interfaces that
-                feel intentional, minimal, and emotionally expressive — the kind
-                that draw you in like a well-shot scene.{" "}
+                technology with cinematic storytelling{"                     "}
               </p>{" "}
             </div>
           </div>

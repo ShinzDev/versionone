@@ -9,7 +9,6 @@ export default function Home() {
         <main className="scroll-smooth">
             <Navbar/>
             <Hero/>
-            <About/>
             <FeaturedProjects/>
             <Contact/>
         </main>

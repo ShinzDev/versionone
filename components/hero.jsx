@@ -20,11 +20,17 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen w-full bg-black text-white grid grid-cols-1 md:grid-cols-2  sm:grid-cols-2 items-center  justify-center px-10"
+      className="min-h-screen w-full bg-black text-white grid grid-cols-1 
+      md:grid-cols-2  sm:grid-cols-2 items-center  justify-center px-10"
     >
       {profile.map((p, index) => {
         return (
           <div className="text-left p-7"  key={index}>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
             <Image
               src={p.img}
               width={400}
@@ -34,12 +40,24 @@ export default function Hero() {
             />
             <h1 className="text-2xl">  Hi, I'm Shina</h1>
             <h1 className="text-5xl">{p.profession}</h1>
-            <div className="bg-black text-white font-bold rounded-md p-2 hover:bg-white hover:text-black transition">
-              <p>
-                I’m a front-end developer and visual creative who blends
-                technology with cinematic storytelling{"                     "}
+            <div className="bg-black    text-white font-medium rounded-md text-pretty
+              px-2 py-2 hover:bg-white hover:text-black   transition duration-500">
+              <p className="text-sm">
+                I’m a front-end developer who builds clean and high-performance web applications.
+                My journey began with curiosity, as I took interfaces apart to understand how they worked.
+                That curiosity grew into a passion for engineering seamless user experiences.
+                
+                                <br/>                 <br/>
+                I specialize in React, JavaScript, and modern UI architecture.
+                I build interfaces that are technically solid and visually refined.
+                Clarity, maintainability, and performance guide every decision I make.
+                Every component has a specific purpose and is designed to scale accordingly.
+                <br/>
+                Today, I create digital experiences that merge thoughtful engineering with modern design.
+                {" "}
               </p>{" "}
             </div>
+              </motion.div>
           </div>
         );
       })}
@@ -51,7 +69,8 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-10 shadow-2xl"
+              className="bg-white/5 backdrop-blur-xl border border-white/10 
+              rounded-3xl p-8 md:p-10 shadow-2xl"
             >
               {/* Full Name + Email */}
               <div className="grid md:grid-cols-2 gap-6 mb-6">

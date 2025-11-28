@@ -9,7 +9,8 @@ export default function FeaturedProjects() {
       title: "Bosun Decoration",
       img: "showcase.png",
       link : 'https://shin-xdecour.vercel.app/',
-      desc: "A cinematic dashboard for daily bread distribution.",
+      desc: "An events decoration website ",
+      button : 'https://shin-xdecour.vercel.app/'
     },
     {
       title: "Automate",
@@ -43,19 +44,31 @@ export default function FeaturedProjects() {
                   src={p.img}
                   alt={p.title}
                   
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-all duration-700"
+                  className="w-full h-64 group-hover:scale-110 transition-all duration-700"
                 />
               </div>
-
+              
               {/* Overlay */}
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-6">
+              <div className="absolute z-50 inset-0 bg-black/90 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-center p-6">
                 <h3 className="text-xl font-semibold">{p.title}</h3>
                 <p className="text-sm opacity-80 mt-2">{p.desc}</p>
+               
+              </div>
+              <div className="p-5" >
+                <button>
+                  check project
+                </button>
               </div>
             </motion.div>
+             
           ))}
         </div>
       </div>
+      <div className="p-5" >
+        <button>
+          check project
+        </button>
+      </div>  
     </section>
   );
 }

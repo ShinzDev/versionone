@@ -38,22 +38,16 @@ export default function Hero() {
               className="rounded-md border-t-gray-50 mt-20"
               alt="shina"
             />
-            <h1 className="text-2xl">  Hi, I'm Shina</h1>
-            <h1 className="text-5xl">{p.profession}</h1>
+            <h1 className="text-2xl px-2 py-2">  Hi, I'm Shina</h1>
+            <h1 className="text-5xl  py-2">{p.profession}</h1>
             <div className="bg-black    text-white font-medium rounded-md text-pretty
               px-2 py-2 hover:bg-white hover:text-black   transition duration-500">
               <p className="text-sm">
-                I’m a front-end developer who builds clean and high-performance web applications.
-                My journey began with curiosity, as I took interfaces apart to understand how they worked.
-                That curiosity grew into a passion for engineering seamless user experiences.
-                
-                                <br/>                 <br/>
-                I specialize in React, JavaScript, and modern UI architecture.
-                I build interfaces that are technically solid and visually refined.
-                Clarity, maintainability, and performance guide every decision I make.
-                Every component has a specific purpose and is designed to scale accordingly.
-                <br/>
-                Today, I create digital experiences that merge thoughtful engineering with modern design.
+                Frontend web developer passionate about building clean, user-friendly digital experiences. 
+                Skilled in React, TypeScript, JavaScript, and Tailwind CSS. Experienced in creating functional
+                web apps, integrating APIs, and documenting build processes. 
+                Strong problem-solving mindset and hands-on project history, 
+                including business-focused tools and creative tech solutions.
                 {" "}
               </p>{" "}
             </div>
@@ -130,3 +124,12 @@ export default function Hero() {
     </section>
   );
 }
+
+
+
+
+
+
+
+
+

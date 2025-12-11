@@ -42,7 +42,7 @@ export default function Hero() {
             <h1 className="text-5xl  py-2">{p.profession}</h1>
             <div className="bg-black    text-white font-medium rounded-md text-pretty
               px-2 py-2 hover:bg-white hover:text-black   transition duration-500">
-              <p className="text-sm">
+              <p className="text-md ">
                 Frontend web developer passionate about building clean, user-friendly digital experiences. 
                 Skilled in React, TypeScript, JavaScript, and Tailwind CSS. Experienced in creating functional
                 web apps, integrating APIs, and documenting build processes. 

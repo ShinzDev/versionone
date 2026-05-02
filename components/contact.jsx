@@ -1,4 +1,4 @@
-
+import Link from 'next/link'
 
 export default function Contact() {
   return (
@@ -9,9 +9,10 @@ export default function Contact() {
   
         <div>Shina.</div>
        <div className=" grid grid-cols-3">
-         <div>Github</div>
-         <div>Linkedin</div>
-         <div>X</div>
+         <div> <Link href="https://github.com/ShinzDev/">Github</Link> </div>
+         <div> <Link href="https://x.com/iamvscode">Linkedin </Link> </div>
+         <div> <Link href="https://x.com/iamvscode">X</Link> </div>
+  
        </div>
    
     </section>

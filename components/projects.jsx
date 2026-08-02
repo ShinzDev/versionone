@@ -27,7 +27,7 @@ export default function FeaturedProjects() {
       link: "https://ashiri-s.vercel.app/",
       desc: "used to tracks and calculate daily sales of different bread types for a real business operation",
       stack: "Stack : React + Next.js",
-      github: "https://github.com/ShinzDev/doughflow",
+      github: "https://github.com/ShinzDev/Ashiri-s",
     },
     {
       title: "Doughflow",

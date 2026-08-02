@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="w-full grid grid-cols-2 py-20 px-10 bg-black text-white border-t border-white/10"
+      className="w-full grid grid-cols-2 py-20 px-10 bg-white text-black border-t border-black/10 dark:bg-black dark:text-white dark:border-white/10"
     >
   
         <div>Shina.</div>

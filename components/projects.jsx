@@ -22,6 +22,14 @@ export default function FeaturedProjects() {
       github: "https://github.com/ShinzDev/Doordash",
     },
     {
+      title: "Ashiri",
+      img: "project4.png",
+      link: "https://ashiri-s.vercel.app/",
+      desc: "used to tracks and calculate daily sales of different bread types for a real business operation",
+      stack: "Stack : React + Next.js",
+      github: "https://github.com/ShinzDev/doughflow",
+    },
+    {
       title: "Doughflow",
       img: "dough.png",
       link: "https://doughflow-ivory.vercel.app/",
@@ -29,10 +37,18 @@ export default function FeaturedProjects() {
       stack: "Stack : React + Next.js",
       github: "https://github.com/ShinzDev/doughflow",
     },
+    {
+      title: "WC-26-gallery",
+      img: "/wc.png",
+      link: "https://wc-26-gallery.vercel.app/",
+      desc: "used to tracks and calculate daily sales of different bread types for a real business operation",
+      stack: "Stack : React + Next.js",
+      github: "https://github.com/ShinzDev/doughflow",
+    },
   ];
 
   return (
-    <section id="projects" className="w-full py-24 bg-black text-white">
+    <section id="projects" className="w-full py-24 bg-white text-black dark:bg-black dark:text-white">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-semibold mb-10 tracking-wide">
           Featured Projects
@@ -47,7 +63,7 @@ export default function FeaturedProjects() {
               transition={{ duration: 0.6, ease: "easeOut" }}
               // onClick={() => window.open(p.link, '_blank')}
               viewport={{ once: true }}
-              className="group relative overflow-hidden rounded-2xl border border-white/10 shadow-xl"
+              className="group relative overflow-hidden rounded-2xl border border-black/10 shadow-xl dark:border-white/10"
             >
               {/* Image */}
               <div className="overflow-hidden">
@@ -64,7 +80,7 @@ export default function FeaturedProjects() {
               </div>
               <div className="p-5 grid gap-2 grid-cols-2">
                 <button
-                  className="rounded-md p-3 hover:bg-[#BFFFD1] duration-1000  transition-all ease-in-out  font-sans font-semibold bg-white text-black"
+                  className="rounded-md p-3 hover:bg-[#BFFFD1] duration-1000  transition-all ease-in-out  font-sans font-semibold bg-black text-white dark:bg-white dark:text-black"
                   onClick={() => window.open(p.link, "_blank")}
                 >
                   check project

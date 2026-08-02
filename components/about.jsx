@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="w-full bg-black text-white px-6 py-24 md:py-32 flex items-center justify-center"
+      className="w-full bg-white text-black px-6 py-24 md:py-32 flex items-center justify-center dark:bg-black dark:text-white"
     >
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         {/* Image / Visual */}
@@ -28,14 +28,14 @@ export default function About() {
             About Me
           </h2>
 
-          <p className="text-gray-300 leading-relaxed text-lg">
+          <p className="text-neutral-600 leading-relaxed text-lg dark:text-gray-300">
             I’m a front-end developer and visual creative who blends technology
             with cinematic storytelling. I design interfaces that feel
             intentional, minimal, and emotionally expressive — the kind that
             draw you in like a well-shot scene.
           </p>
 
-          <p className="text-gray-400 leading-relaxed mt-6 text-lg">
+          <p className="text-neutral-500 leading-relaxed mt-6 text-lg dark:text-gray-400">
             My work ranges from building sleek web apps to crafting visual
             narratives through photography and short-form film. Every project is
             an opportunity to merge aesthetics with functionality.
@@ -43,7 +43,7 @@ export default function About() {
 
           <a
             href="#contact"
-            className="inline-block mt-10 px-6 py-3 border border-white/20 rounded-xl hover:bg-white hover:text-black transition duration-300 text-sm tracking-wide"
+            className="inline-block mt-10 px-6 py-3 border border-black/20 rounded-xl hover:bg-black hover:text-white transition duration-300 text-sm tracking-wide dark:border-white/20 dark:hover:bg-white dark:hover:text-black"
           >
             Let's Work
           </a>

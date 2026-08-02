@@ -1,12 +1,13 @@
 
 
 import "./globals.css";
-import { Inter, Poppins } from "next/font/google";
+import { Inter, Space_Grotesk} from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({
   subsets: ["latin"],
 });
-const poppins = Poppins({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
     weight: ["400", "500", "600"],
 });
@@ -17,8 +18,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={poppins.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={ spaceGrotesk.className}>
+        <ThemeProvider attribute="class" defaultTheme="dark">
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

@@ -14,6 +14,14 @@ export default function FeaturedProjects() {
       github: "https://github.com/ShinzDev/wc-26-gallery",
     },
     {
+      title: "Ashiri",
+      img: "project4.png",
+      link: "https://ashiri-s.vercel.app/",
+      desc: "used to tracks and calculate daily sales of different bread types for a real business operation",
+      stack: "Stack : React + Next.js",
+      github: "https://github.com/ShinzDev/Ashiri-s",
+    },
+    {
       title: "Bosun Decoration",
       img: "showcase.png",
       link: "https://shin-xdecour.vercel.app/",
@@ -29,14 +37,7 @@ export default function FeaturedProjects() {
       stack: "Stack : Next.js - Tailwind CSS - Django backend",
       github: "https://github.com/ShinzDev/Doordash",
     },
-    {
-      title: "Ashiri",
-      img: "project4.png",
-      link: "https://ashiri-s.vercel.app/",
-      desc: "used to tracks and calculate daily sales of different bread types for a real business operation",
-      stack: "Stack : React + Next.js",
-      github: "https://github.com/ShinzDev/Ashiri-s",
-    },
+   
     {
       title: "Doughflow",
       img: "dough.png",

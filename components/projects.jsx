@@ -6,6 +6,14 @@ import Link from "next/link";
 export default function FeaturedProjects() {
   const projects = [
     {
+      title: "WC-26-gallery",
+      img: "/wc.png",
+      link: "https://wc-26-gallery.vercel.app/",
+      desc: "used to tracks and calculate daily sales of different bread types for a real business operation",
+      stack: "Stack : React + Next.js",
+      github: "https://github.com/ShinzDev/wc-26-gallery",
+    },
+    {
       title: "Bosun Decoration",
       img: "showcase.png",
       link: "https://shin-xdecour.vercel.app/",
@@ -37,14 +45,7 @@ export default function FeaturedProjects() {
       stack: "Stack : React + Next.js",
       github: "https://github.com/ShinzDev/doughflow",
     },
-    {
-      title: "WC-26-gallery",
-      img: "/wc.png",
-      link: "https://wc-26-gallery.vercel.app/",
-      desc: "used to tracks and calculate daily sales of different bread types for a real business operation",
-      stack: "Stack : React + Next.js",
-      github: "https://github.com/ShinzDev/doughflow",
-    },
+    
   ];
 
   return (
